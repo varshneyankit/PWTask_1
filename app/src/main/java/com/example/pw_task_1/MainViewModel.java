@@ -1,10 +1,7 @@
 package com.example.pw_task_1;
 
-import android.app.Application;
 import android.util.Log;
 
-import androidx.annotation.NonNull;
-import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
@@ -63,8 +60,8 @@ public class MainViewModel extends ViewModel {
             @Override
             public void onFailure(Call<RootData> call, Throwable t) {
                 Log.e("TAG", "onFailure: "+t.getMessage() );
+
             }
         });
-
     }
 }

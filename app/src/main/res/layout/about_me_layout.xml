@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="10dp"
@@ -11,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:text="About me"
+        android:text="@string/about_me_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Title"
         android:textSize="22sp"
         android:textStyle="bold" />
@@ -20,57 +21,59 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/teal_700"
-        android:text="Ankit Varshney"
+        android:text="@string/about_me_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_person_24"
+        app:drawableTint="@color/teal_700" />
 
     <TextView
         android:id="@+id/about_me_call"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:drawableStart="@drawable/ic_baseline_call_24"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/teal_700"
-        android:text="Call me: +91 8375983710"
+        android:text="@string/about_me_contact_no"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_call_24"
+        app:drawableTint="@color/teal_700" />
 
     <TextView
         android:id="@+id/about_me_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/teal_700"
-        android:text="E-mail: ankitv397@gmail.com"
+        android:text="@string/about_me_email"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_email_24"
+        app:drawableTint="@color/teal_700" />
 
     <TextView
         android:id="@+id/about_me_github"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:drawableStart="@drawable/ic_baseline_code_24"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/teal_700"
-        android:text="GitHub: https://github.com/varshneyankit/"
+        android:text="@string/about_me_github"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_code_24"
+        app:drawableTint="@color/teal_700" />
+
     <TextView
         android:id="@+id/about_me_resume"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="8dp"
-        android:drawableStart="@drawable/ic_baseline_notes_24"
         android:drawablePadding="10dp"
-        android:drawableTint="@color/teal_700"
-        android:text="Resume: "
+        android:text="@string/about_me_resume"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        app:drawableStartCompat="@drawable/ic_baseline_notes_24"
+        app:drawableTint="@color/teal_700" />
+
 </LinearLayout>
